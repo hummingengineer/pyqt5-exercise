@@ -26,12 +26,26 @@ class RepresentativeSelector(QWidget):
         self.main_image.move(100, 10)
 
     def set_button(self):
-        pass
+        self.representative_selection_button = QPushButton('Select a representative', self)
+        self.representative_selection_button.setFixedSize(340, 40)
+        self.representative_selection_button.move(30, 290)
+        self.representative_selection_button.clicked.connect(self.choice)
+
+        self.quit_button = QPushButton('Quit Button', self)
+        self.quit_button.setFixedSize(340, 40)
+        self.quit_button.move(30, 340)
+        self.quit_button.clicked.connect(self.close)
 
     def set_tooltip(self):
         pass
 
     def set_number(self):
+        pass
+
+    def choice(self):
+        pass
+
+    def close(self):
         pass
 
 program_endless_loop = QApplication(sys.argv)
