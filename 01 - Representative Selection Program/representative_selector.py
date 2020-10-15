@@ -21,8 +21,10 @@ class RepresentativeSelector(QWidget):
         self.show()
 
     def set_image(self):
-        pass
-        
+        self.main_image = QLabel(self)
+        self.main_image.setPixmap(QPixmap('img/cat.png').scaled(35, 44))
+        self.main_image.move(100, 10)
+
     def set_button(self):
         pass
 
