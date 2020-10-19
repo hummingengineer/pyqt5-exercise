@@ -43,7 +43,10 @@ class RepresentativeSelector(QWidget):
         self.setToolTip('QWidget Section')
 
     def set_number(self):
-        pass
+        # https://doc.qt.io/qtforpython/PySide2/QtGui/QFont.html
+        self.representative_number_label = QLabel('000', self)
+        self.representative_number_label.setFont(QFont("Helvetica", pointSize=75, weight=2))
+        self.representative_number_label.move(100, 100)
 
     def choice(self):
         pass
