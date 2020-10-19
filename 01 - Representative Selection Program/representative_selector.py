@@ -37,7 +37,10 @@ class RepresentativeSelector(QWidget):
         self.quit_button.clicked.connect(self.close)
 
     def set_tooltip(self):
-        pass
+        self.representative_selection_button.setToolTip('You can select a representative.\nBe careful. You can\'t cancel it.')
+        self.quit_button.setToolTip('You can quit this program.')
+        self.main_image.setToolTip('Representative Image')
+        self.setToolTip('QWidget Section')
 
     def set_number(self):
         pass
