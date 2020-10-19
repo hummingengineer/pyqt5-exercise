@@ -49,7 +49,8 @@ class RepresentativeSelector(QWidget):
         self.representative_number_label.move(100, 100)
 
     def choice(self):
-        pass
+        s = str(random.randint(1, 1000))
+        self.representative_number_label.setText(s)
 
     def close(self):
         pass
