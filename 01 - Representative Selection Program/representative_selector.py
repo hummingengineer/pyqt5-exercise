@@ -53,7 +53,7 @@ class RepresentativeSelector(QWidget):
         self.representative_number_label.setText(s)
 
     def close(self):
-        pass
+        return QCoreApplication.instance().quit()
 
 program_endless_loop = QApplication(sys.argv)
 exec_instance = RepresentativeSelector()
